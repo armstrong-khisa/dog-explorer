@@ -1,0 +1,231 @@
+:root {
+    --primary-blue: #0373d5;
+    --primary-red: #ff6347;
+    --primary-purple: #a403d5;
+    --primary-hover-blue: #0257a8;
+    --primary-hover-orange: #d75f0f;
+    --primary-hover-purple: #8b02ac;
+    --text-dark: #070606;
+    --text-light: #ffffff;
+    --text-section: #1a1a1a;
+    --bg-glass: rgba(255, 255, 255, 0.15);
+    --bg-glass-hover: rgba(255, 255, 255, 0.25);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(joe-caione-qO-PIF84Vxg-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+}
+
+.list-dog-breeds{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.list-dog-breeds h1 {
+    color: var(--text-light);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.list-dog-breeds > p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#load-breeds{
+    padding: 12px 24px;
+    color: var(--text-light);
+    background-color: var(--primary-red);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#load-breeds:hover{
+    background-color: var(--primary-hover-orange);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#load-fact{
+    padding: 12px 24px;
+    color: var(--text-light);
+    background-color: var(--primary-blue);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#load-fact:hover{
+    background-color: var(--primary-hover-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#load-groups{
+    padding: 12px 24px;
+    color: var(--text-light);
+    background-color: var(--primary-purple);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#load-groups:hover{
+    background-color: var(--primary-hover-purple);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+#load-breeds-details{
+    padding: 12px 24px;
+    color: var(--text-light);
+    background-color: rgba(25, 25, 41, 0.884);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.main-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+section{
+    background: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    color: var(--text-section);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition);
+}
+
+section h3 {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+section p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+section ul {
+    list-style: none;
+    color: var(--text-light);
+}
+
+section li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+section li:last-child {
+    border-bottom: none;
+}
+
+section:hover{
+    transform: translateY(-8px);
+    background: var(--bg-glass-hover);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.section-error{
+    background-color: transparent;
+    width: 100%;
+}
+
+.error{
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    padding: 12px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #ff6b6b;
+    text-align: center;
+    display: none;
+}
+
+.error.show {
+    display: block;
+}
+
+#breed-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .list-dog-breeds {
+        padding: 20px;
+    }
+    
+    .list-dog-breeds h1 {
+        font-size: 2rem;
+    }
+    
+    .main-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    #load-breeds, #dog-fact, #load-groups {
+        width: 100%;
+    }
+}

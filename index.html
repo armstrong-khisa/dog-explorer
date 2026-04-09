@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="list-dog-breeds">
+        <h1>Dog Explorer</h1>
+        <p>Explore dog breeds & facts</p>
+        <div class="buttons">
+             <button id="load-fact">Load Fact</button>
+            <button id="load-breeds">Load Breeds</button>
+            <button id="load-breeds-details">Load Breeds Details</button>
+            <button id="load-groups">Load Groups</button>
+        </div>
+        <div class="section-error">
+            <p id="error" class="error">Failed to load dog facts. Please try again</p>
+        </div>
+        <div class="main-section">
+            
+        <section id="facts">
+            <h3>Facts</h3>
+            <p id="dog-facts">Dogs can smell up to 100,000 times better than humans!</p>
+        </section>
+        <section id="breeds-list">
+            <h3>Breeds</h3>
+            <ul id="breeds">
+                <li id="breeds">
+                    Golden Retriever
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Breed Detail</h3>
+            <div id="breed-details">
+<p id="breed-name">Name: Golden Retriever</p>
+<p id="breed-life-span">Life Span: 12-15 years</p>
+<p id="breed-male-weight">Male Weight: 20–27kg</p>
+<p id="breed-female-weight">Female Weight: 16–23kg</p>
+            </div>
+        </section>
+        <section id="groups">
+            <h3>Groups</h3>
+            <ul id="dogs-groups">
+                <li class="groups">
+                    Working Group
+                </li>
+                <li class="groups">
+                    Sporting Group</li>
+            </ul>
+        </section>
+        </div>
+    </main>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
