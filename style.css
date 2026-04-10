@@ -9,7 +9,7 @@
     --text-light: #ffffff;
     --text-section: #1a1a1a;
     --bg-glass: rgba(255, 255, 255, 0.15);
-    --bg-glass-hover: rgba(255, 255, 255, 0.25);
+    --bg-glass-hover: rgba(66, 104, 180, 0.25);
     --border-radius: 12px;
     --transition: all 0.3s ease;
 }
@@ -22,7 +22,7 @@
 
 body{
     min-height: 100vh;
-    background-image: url(joe-caione-qO-PIF84Vxg-unsplash.jpg);
+    background-image: url(alvan-nee-T-0EW-SEbsE-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,11 +139,11 @@ body{
 }
 
 section{
-    background: var(--bg-glass);
+    background: rgba(205, 102, 33, 0.404);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
     padding: 20px;
-    color: var(--text-section);
+    color: black;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -151,13 +151,13 @@ section{
 }
 
 section h3 {
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
 
 section p {
-    color: var(--text-light);
+    color: white;
     line-height: 1.6;
 }
 
