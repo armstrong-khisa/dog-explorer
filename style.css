@@ -1,7 +1,7 @@
 :root {
-    --primary-blue: #0373d5;
-    --primary-red: #ff6347;
-    --primary-purple: #a403d5;
+    --primary-blue: #4796db;
+    --primary-red: #f07762;
+    --primary-purple: #b469cb;
     --primary-hover-blue: #0257a8;
     --primary-hover-orange: #d75f0f;
     --primary-hover-purple: #8b02ac;
@@ -123,7 +123,7 @@ body{
 #load-breeds-details{
     padding: 12px 24px;
     color: var(--text-light);
-    background-color: rgba(25, 25, 41, 0.884);
+    background-color: rgba(66, 104, 180, 0.25);
     border: none;
     border-radius: 10px;
     font-weight: bold;
@@ -139,8 +139,6 @@ body{
 }
 
 section{
-    background: rgba(205, 102, 33, 0.404);
-    backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
     padding: 20px;
     color: black;
@@ -181,10 +179,23 @@ section:hover{
     background: var(--bg-glass-hover);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+.section-facts{
+    background-color: var(--primary-blue);
+}
+.breeds-list{
+    background-color: var(--primary-red);
+}
+.breed-details{
+    background-color: rgba(68, 68, 84, 0.884);
+}
+.dog-groups{
+    background-color: var(--primary-purple)
+}
 .section-error{
     background-color: transparent;
     width: 100%;
 }
+
 
 .error{
     color: #ff6b6b;
@@ -228,4 +239,18 @@ section:hover{
     #load-breeds, #dog-fact, #load-groups {
         width: 100%;
     }
+}
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--text-dark);    
+    max-width: 1200px;
+    transition: var(--transition);
+}
+footer:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
